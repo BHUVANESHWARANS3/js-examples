@@ -1,9 +1,9 @@
 function captchaGenerate(){
     let captcha = "";
-    const  TEXT = "abcdefghijkmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ023456789"
+    const  TEXT = "abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ0123456789"
     for(let i=0;i<6;i++){
-        let index = Math.floor((Math.random()*60    ));
-        captcha = captcha+=TEXT[index];
+        let index = Math.floor((Math.random()*60));
+        captcha = captcha+TEXT[index];
         console.log(index + " " + TEXT[index]);
     }
     return captcha;
