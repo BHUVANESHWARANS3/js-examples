@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <div id="captcha-container" class="container">
+        <div class="input-container">
+            <input type="text" placeholder="Enter the captcha" id="captchavalue">
+            <button onclick="checkCaptcha()">Check</button>
+        </div>
+    </div>
+    <div id="quiz-container" class="quiz-container">
+        <h1>Interactive Quiz</h1>
+        <section>
+            <p>1.What is the capital of France?</p>
+            <input type="radio" name="France" value="Paris">
+            <label>Paris</label>
+            <input type="radio" name="France" value="London">
+            <label>London</label>
+            <input type="radio" name="France" value="Berlin">
+            <label>Berlin</label>
+        </section>
+        <section>
+            <p>2. Which planet is known as the Red Planet?</p>
+            <input type="radio" name="Red" value="mars">
+            <label>Mars</label>
+            <input type="radio" name="Red" value="venus">
+            <label>venus</label>
+            <input type="radio" name="Red" value="Jupiter">
+            <label>Jupiter</label>
+        </section>
+        <section>
+            <p>3.What is the largest mammal on Earth?</p>
+            <input type="radio" name="mammal" value="Elephant">
+            <label>Elephant</label>
+            <input type="radio" name="mammal" value="Blue Whale">
+            <label>Blue Whale</label>
+            <input type="radio" name="mammal" value="Giraffe">
+            <label>Giraffe</label>
+        </section>
+        <button id="quiz-submit">Submit</button>
+    </div>
+    <div class="image">
+        <img src="./imgfocus2.jpg" alt="" id="one">
+        <img src="./imgfocus1.jpg" alt="" id="two">
+        <img src="./imgfocus3.jpg" alt="" id="three">
+        <div class="shade" id="shade-img">
+            <img src="./imgfocus3.jpg">
+            <p>X</p>
+        </div>
+    </div>
+    <div class="search_title">
+        <input type="text" placeholder="Enter the text to match in title" id="search_value">
+        <button id="search_button">Search</button>
+    </div>
+    <script src="./captcha.js"></script>
+</body>
+
+</html>
